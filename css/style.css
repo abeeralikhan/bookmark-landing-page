@@ -1,38 +1,179 @@
 /***************************/
 /* HEADER */
 /***************************/
-
-/* body {
-  background-color: green;
-} */
+.header {
+  width: 100%;
+  position: relative;
+}
 
 .navbar {
-  margin-top: 4rem;
-
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar-mobile {
+.navbar-menu > img {
   cursor: pointer;
 }
 
+/* ACTIVE NAVBAR */
+
 .nav {
+  height: 85.5vh;
+
   position: absolute;
-  top: 10rem;
+  inset: 10rem 0 auto 0;
+}
+
+.nav-container {
+  width: calc(100% - 7rem);
+  margin-inline: auto;
+  height: 75vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-links {
+  /* Explicit positioning for mobile nav */
+  /* Need to fix these in the queries */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link {
   list-style: none;
+  padding: 2rem 0;
+  border-top: 1px solid var(--clr-primary-022);
+  width: 100%;
+  text-align: center;
 }
 
-.nav-link a {
-  color: var(--clr-primary-02);
-  font-size: 2.4rem;
+.nav-link > a {
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--clr-primary-02);
 }
+
+.nav-link:last-child > a {
+  display: block;
+}
+
+.nav-link-cta {
+  font-weight: var(--fw-semi-bold);
+  border: 2px solid var(--clr-primary-02);
+}
+
+.nav-hide {
+  display: none;
+}
+
+/*
+  background color will only be applied
+  when have both classes together 
+
+  Abeer you're genious
+*/
+.nav-active.nav,
+.nav-active.header {
+  background-color: var(--clr-neutral-011);
+}
+
+.nav-active.navbar-logo {
+  filter: invert(100) brightness(100);
+}
+
+.nav-social-links {
+  display: flex;
+  align-items: center;
+  width: 7rem;
+  margin-inline: auto;
+}
+
+.nav-social-links > a:last-child {
+  margin-left: 3rem;
+}
+
+/* Move Queries to the queries.css later */
+@media (min-width: 40em) {
+  body {
+    background-color: green;
+  }
+  .navbar-menu {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    height: auto;
+  }
+
+  /* Resetting the nav container */
+  .nav-container {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-inline: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    margin-left: 2rem;
+  }
+
+  /*
+  In case mobile nav is active,
+  and we dont want its bg colors to impact the desktop viewport
+  */
+  .nav-active.nav,
+  .nav-active.header {
+    background-color: inherit;
+  }
+
+  .nav-active.navbar-logo {
+    filter: none;
+  }
+
+  .nav-hide {
+    display: block;
+  }
+
+  .nav-social-links {
+    display: none;
+  }
+}
+
+/***************************/
+/* HERO */
+/***************************/
+
+/***************************/
+/* FEATURES */
+/***************************/
+
+/***************************/
+/* EXTENSION */
+/***************************/
+
+/***************************/
+/* FAQ */
+/***************************/
+
+/***************************/
+/* CTA */
+/***************************/
+
+/***************************/
+/* FOOTER */
+/***************************/
 
 /*
 - Font sizes (px):
