@@ -188,7 +188,6 @@
 }
 
 .features-nav-link {
-  --border-color: rgb(209, 209, 209);
   list-style: none;
 
   padding: 2rem 0;
@@ -241,6 +240,10 @@
 /* EXTENSION */
 /***************************/
 
+.extensions {
+  overflow: visible;
+}
+
 .extensions-list > * {
   box-shadow: var(--box-shadow-02);
   border-radius: var(--rad-02);
@@ -267,10 +270,75 @@
   padding: 2.5rem;
 }
 
+/* Move Queries to the queries.css later */
+@media (min-width: 40em) {
+}
+
 /***************************/
 /* FAQ */
 /***************************/
 
+.faq-accordion > * {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.question > img {
+  width: 1.5rem;
+}
+
+.question > p,
+.answer > p {
+  font-size: 1.5rem;
+  line-height: var(--lh-02);
+}
+
+.question > p {
+  color: hsl(231, 7%, 19%);
+}
+
+.answer {
+  display: none;
+}
+
+.answer > p {
+  color: hsl(223, 6%, 45%);
+  line-height: var(--lh-03);
+}
+
+.faq .btn--primary {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.question.active {
+  margin-bottom: 2rem;
+}
+
+.question.active ~ .answer {
+  display: block;
+}
+
+.question.active > img {
+  transform: rotate(180deg);
+  filter: ;
+}
+
+/* Move Queries to the queries.css later */
+@media (min-width: 40em) {
+}
 /***************************/
 /* CTA */
 /***************************/

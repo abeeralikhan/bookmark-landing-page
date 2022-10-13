@@ -34,6 +34,10 @@
   /* line-height */
   --lh-01: 1.3;
   --lh-02: 1.6;
+  --lh-03: 1.9;
+
+  /* border */
+  --border-color: rgb(209, 209, 209);
 }
 
 /* Box sizing rules */

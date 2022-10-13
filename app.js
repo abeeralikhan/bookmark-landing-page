@@ -1,11 +1,10 @@
+// Header Section
 const navOpenBtn = document.querySelector(".navbar-open");
 const navCloseBtn = document.querySelector(".navbar-close");
 const navMenu = document.querySelector(".navbar-menu");
 const navigation = document.querySelector(".nav");
 const header = document.querySelector(".header");
 const navLogo = document.querySelector(".navbar-logo");
-const featuresNav = document.querySelector(".features-nav-links");
-const featureTabs = document.querySelector(".features-tabs").children;
 
 navOpenBtn.style.display = "block";
 navCloseBtn.style.display = "none";
@@ -33,6 +32,12 @@ const handleMenuClick = () => {
     navLogo.classList.remove("nav-active");
   }
 };
+
+navMenu.addEventListener("click", handleMenuClick);
+
+// Features Section
+const featuresNav = document.querySelector(".features-nav-links");
+const featureTabs = document.querySelector(".features-tabs").children;
 
 const addClass = (elements, className) => {
   for (let element of elements) {
@@ -70,4 +75,11 @@ for (let child of featuresNav.children) {
   child.addEventListener("click", handleTabClick);
 }
 
-navMenu.addEventListener("click", handleMenuClick);
+// FAQ Section
+const questions = document.querySelectorAll(".question");
+
+for (let question of questions) {
+  question.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
+}
