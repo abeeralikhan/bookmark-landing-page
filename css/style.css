@@ -155,36 +155,9 @@
 /***************************/
 /* HERO */
 /***************************/
-
 .hero-image {
   margin-inline: auto;
   position: relative;
-}
-
-.hero-image::before {
-  content: "";
-  display: block;
-  width: 100rem;
-  height: 80%;
-  background-color: var(--clr-primary-01);
-  border-radius: 100vmax;
-
-  position: absolute;
-  z-index: -1;
-  top: 5rem;
-  left: 5rem;
-}
-
-.hero-desc > :nth-child(1) {
-  margin-bottom: 2rem;
-}
-
-.hero-desc > :nth-child(2) {
-  margin-bottom: 3rem;
-}
-
-.hero-desc > :last-child {
-  margin-bottom: 0;
 }
 
 .hero-cta {
@@ -204,6 +177,55 @@
 /* FEATURES */
 /***************************/
 
+.tab-image {
+  position: relative;
+}
+
+.features-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-nav-link {
+  --border-color: rgb(209, 209, 209);
+  list-style: none;
+
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  text-align: center;
+}
+
+.features-nav-link:last-child {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.features-nav-link > span {
+  font-size: 1.7rem;
+  color: hsl(223, 6%, 45%);
+}
+
+.tab-active > span {
+  position: relative;
+  color: hsl(227, 7%, 26%);
+}
+
+.tab-active > span::before {
+  content: "";
+  width: 90%;
+  height: 20%;
+  background-color: var(--clr-accent-01);
+
+  position: absolute;
+  top: 3.6rem;
+  left: 5%;
+}
+
+
+/* Move Queries to the queries.css later */
+@media (min-width: 40em) {
+}
 /***************************/
 /* EXTENSION */
 /***************************/

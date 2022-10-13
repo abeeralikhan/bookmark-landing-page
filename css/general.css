@@ -108,53 +108,39 @@ svg {
 - Desktop: 1440px
 */
 
+section {
+  overflow: hidden;
+}
+
 /* Utility Classes */
-
-.bg-primary-01 {
-  background-color: var(--clr-primary-01);
-}
-.bg-primary-02 {
-  background-color: var(--clr-primary-02);
-}
-.bg-accent-01 {
-  background-color: var(--clr-accent-01);
-}
-.bg-neutal-01 {
-  background-color: var(--clr-neutral-01);
-}
-.bg-neutal-02 {
-  background-color: var(--clr-neutral-02);
-}
-
-.txt-primary-01 {
-  color: var(--clr-primary-01);
-}
-.txt-primary-02 {
-  color: var(--clr-primary-02);
-}
-.txt-accent-01 {
-  color: var(--clr-accent-01);
-}
-.txt-neutal-01 {
-  color: var(--clr-neutral-01);
-}
-.txt-neutal-02 {
-  color: var(--clr-neutral-02);
-}
-
-.fw-regular {
-  font-weight: var(--fw-regular);
-}
-.fw-semi-bold {
-  font-weight: var(--fw-semi-bold);
-}
 
 .pad-block-01 {
   padding-block: 3rem;
 }
 
+.pad-block-02 {
+  padding-block: 9.6rem;
+}
+
+.mg-bottom-01 {
+  margin-bottom: 1rem;
+}
+
+.mg-bottom-02 {
+  margin-bottom: 2rem;
+}
+
+.mg-bottom-03 {
+  margin-bottom: 3rem;
+}
+
+.mg-bottom-04 {
+  margin-bottom: 6.4rem;
+}
+
+
 .container {
-  width: min(120rem, 100% - 7rem);
+  width: min(120rem, 100% - 6rem);
   margin-inline: auto;
 }
 
@@ -182,7 +168,7 @@ svg {
 
 .btn--primary,
 .btn--secondary {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .btn-cta {
@@ -193,39 +179,72 @@ svg {
   display: grid;
 }
 
-.grid--rg-04 {
+.grid--rg-01 {
   row-gap: 4rem;
 }
 
-/* .grid--col-2 {
-  grid-template-columns: repeat(2, 1fr);
+.grid--rg-02 {
+  row-gap: 7rem;
 }
 
-.grid--col-3 {
-  grid-template-columns: repeat(2, 1fr);
-} */
-
 .primary-heading {
-  font-size: 2.7rem;
+  font-size: 2.8rem;
 }
 
 .secondary-heading {
   font-size: 2.4rem;
 }
 
+.tertiary-heading {
+  font-size: 2.4rem;
+}
+
 .secondary-heading,
-.primary-heading {
+.primary-heading,
+.tertiary-heading{
   line-height: var(--lh-01);
   color: var(--clr-neutral-01);
   text-align: center;
   font-weight: var(--fw-semi-bold);
 }
 
-.description {
-  font-size: 1.4rem;
+.desc {
+  font-size: 1.5rem;
   line-height: var(--lh-02);
-  text-align: center;
   color: var(--clr-neutral-02);
-  max-width: 30ch;
+  text-align: center;
+  max-width: 32ch;
   margin-inline: auto;
 }
+
+.illustration-right::before,
+.illustration-left::before {
+  content: "";
+  display: block;
+  width: 100rem;
+  height: 80%;
+  background-color: var(--clr-primary-01);
+  border-radius: 100vmax;
+  position: absolute;
+  z-index: -1;
+}
+
+.illustration-right::before {
+  top: 23%;
+  left: 17%;
+}
+
+.illustration-left::before {
+  height: 95%;
+  top: 20%;
+  right: 15%;
+}
+
+/*
+- Font sizes (px):
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  
+- Spacing System (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
