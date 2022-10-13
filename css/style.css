@@ -241,6 +241,32 @@
 /* EXTENSION */
 /***************************/
 
+.extensions-list > * {
+  box-shadow: var(--box-shadow-02);
+  border-radius: var(--rad-02);
+}
+
+.extensions .tertiary-heading {
+  font-size: 2.1rem;
+}
+
+.extensions .tertiary-heading {
+  font-size: 2.1rem;
+}
+
+.extension-logo {
+  width: 10rem;
+  margin-inline: auto;
+}
+
+.extension-header {
+  padding: 6rem 0 3rem 0;
+}
+
+.extension-cta {
+  padding: 2.5rem;
+}
+
 /***************************/
 /* FAQ */
 /***************************/
