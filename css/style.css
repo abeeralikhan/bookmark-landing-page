@@ -202,13 +202,14 @@
 }
 
 .features-nav-link > span {
-  font-size: 1.7rem;
+  cursor: pointer;
+  font-size: 1.6rem;
   color: hsl(223, 6%, 45%);
 }
 
 .tab-active > span {
   position: relative;
-  color: hsl(227, 7%, 26%);
+  color: hsl(231, 7%, 19%);
 }
 
 .tab-active > span::before {
@@ -222,6 +223,16 @@
   left: 5%;
 }
 
+.tabs-desc {
+  position: relative;
+}
+
+.features-tabs .btn--primary {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 /* Move Queries to the queries.css later */
 @media (min-width: 40em) {

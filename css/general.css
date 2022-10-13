@@ -138,10 +138,13 @@ section {
   margin-bottom: 6.4rem;
 }
 
-
 .container {
   width: min(120rem, 100% - 6rem);
   margin-inline: auto;
+}
+
+.hide {
+  display: none !important;
 }
 
 .btn {
@@ -201,7 +204,7 @@ section {
 
 .secondary-heading,
 .primary-heading,
-.tertiary-heading{
+.tertiary-heading {
   line-height: var(--lh-01);
   color: var(--clr-neutral-01);
   text-align: center;
@@ -247,4 +250,3 @@ section {
 - Spacing System (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-

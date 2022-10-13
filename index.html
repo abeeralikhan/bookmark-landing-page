@@ -17,6 +17,7 @@
   </head>
   <body>
     <!-- HEADER -->
+
     <header class="header">
       <div class="container">
         <div class="navbar">
@@ -76,7 +77,9 @@
             <img src="./images/illustration-hero.svg" alt="hero illustration" />
           </div>
           <div class="hero-desc">
-            <h1 class="primary-heading mg-bottom-02">A Simple Bookmark Manager</h1>
+            <h1 class="primary-heading mg-bottom-02">
+              A Simple Bookmark Manager
+            </h1>
             <p class="desc mg-bottom-03">
               A clean and simple interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try it
@@ -90,42 +93,98 @@
         </div>
       </div>
     </section>
-    
+
     <!-- FEATURES -->
+
     <section class="features pad-block-02">
       <div class="container">
         <div class="features-desc">
           <h2 class="secondary-heading mg-bottom-01">Features</h2>
           <p class="desc mg-bottom-03">
-            Our aim is to make it quick and easy for you to access your favourite website. Your bookmarks sync between your devices so you can access them on the go.
+            Our aim is to make it quick and easy for you to access your
+            favourite website. Your bookmarks sync between your devices so you
+            can access them on the go.
           </p>
           <div class="features-navigation">
             <nav class="features-nav | mg-bottom-04">
               <ul class="features-nav-links">
-                <li class="features-nav-link tab-active"><span>Simple Bookmarking</span></li>
-                <li class="features-nav-link"><span>Speedy Searching</span></li>
-                <li class="features-nav-link"><span>Easy Sharing</span></li>
+                <li class="features-nav-link tab-active" data-value="0">
+                  <span>Simple Bookmarking</span>
+                </li>
+                <li class="features-nav-link" data-value="1">
+                  <span>Speedy Searching</span>
+                </li>
+                <li class="features-nav-link" data-value="2">
+                  <span>Easy Sharing</span>
+                </li>
               </ul>
             </nav>
             <div class="features-tabs">
-              <div class="features-tab-01 | grid grid--rg-02">
+              <!-- TAB 1 -->
+              <div class="grid grid--rg-02">
                 <div class="tab-image | illustration-left">
-                  <img src="./images/illustration-features-tab-1.svg" alt="illustration" />
+                  <img
+                    src="./images/illustration-features-tab-1.svg"
+                    alt="illustration"
+                  />
                 </div>
                 <div class="tab-desc">
-                  <h3 class="tertiary-heading mg-bottom-01">Bookmark in one click</h3>
-                  <p class="desc">
-                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites. 
+                  <h3 class="tertiary-heading mg-bottom-01">
+                    Bookmark in one click
+                  </h3>
+                  <p class="desc mg-bottom-02">
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites.
                   </p>
+                  <a href="#" class="btn btn--primary">More info</a>
+                </div>
+              </div>
+              <!-- TAB 2 -->
+              <div class="grid grid--rg-02 hide">
+                <div class="tab-image | illustration-left">
+                  <img
+                    src="./images/illustration-features-tab-2.svg"
+                    alt="illustration"
+                  />
+                </div>
+                <div class="tab-desc">
+                  <h3 class="tertiary-heading mg-bottom-01">
+                    Intelligent search
+                  </h3>
+                  <p class="desc mg-bottom-02">
+                    Our powerful search feature will help you find saved sites
+                    in no time at all. No need to trawl through all of your
+                    bookmarks.
+                  </p>
+                  <a href="#" class="btn btn--primary">More info</a>
+                </div>
+              </div>
+              <!-- TAB 3 -->
+              <div class="grid grid--rg-02 hide">
+                <div class="tab-image | illustration-left">
+                  <img
+                    src="./images/illustration-features-tab-3.svg"
+                    alt="illustration"
+                  />
+                </div>
+                <div class="tab-desc">
+                  <h3 class="tertiary-heading mg-bottom-01">
+                    Share your bookmarks
+                  </h3>
+                  <p class="desc mg-bottom-02">
+                    Easily share your bookmarks and collections with others.
+                    Create a shareable link that you can send at the click of a
+                    button.
+                  </p>
+                  <a href="#" class="btn btn--primary">More info</a>
+                </div>
               </div>
             </div>
-
           </div>
-          
         </div>
       </div>
     </section>
-
 
     <!-- EXTENSIONS -->
 
