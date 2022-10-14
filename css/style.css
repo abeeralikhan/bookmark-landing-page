@@ -218,7 +218,7 @@
   background-color: var(--clr-accent-01);
 
   position: absolute;
-  top: 3.6rem;
+  top: 3.56rem;
   left: 5%;
 }
 
@@ -333,7 +333,28 @@
 
 .question.active > img {
   transform: rotate(180deg);
-  filter: ;
+  /* filter: ; */
+}
+
+.cta-form #email {
+  display: block;
+  color: var(--clr-neutral-02);
+  font-size: 1.4rem;
+
+  width: 100%;
+  padding: 1.35rem 1.6rem;
+  border: none;
+  border-radius: var(--rad-01);
+  position: relative;
+}
+
+.cta-form #email:active,
+.cta-form #email:focus {
+  outline: none;
+}
+
+.cta-form #email:invalid {
+  outline: 3px solid var(--clr-accent-01);
 }
 
 /* Move Queries to the queries.css later */
@@ -342,6 +363,25 @@
 /***************************/
 /* CTA */
 /***************************/
+.cta {
+  background-color: var(--clr-primary-01);
+}
+
+.cta-desc > span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-primary-02);
+
+  display: block;
+  text-align: center;
+}
+
+.cta-desc > .secondary-heading {
+  color: var(--clr-primary-02);
+  font-size: 2.2rem;
+}
 
 /***************************/
 /* FOOTER */
