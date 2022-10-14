@@ -205,7 +205,7 @@ section {
 .btn--cta {
   background-color: var(--clr-accent-01);
   color: var(--clr-primary-02);
-  box-shadow: ;
+  box-shadow: var(--box-shadow-03);
 }
 
 .btn--primary,
