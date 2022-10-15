@@ -147,6 +147,10 @@ section {
   margin-bottom: 1rem;
 }
 
+.mg-bottom-01-span {
+  margin-bottom: 1rem;
+}
+
 .mg-bottom-015 {
   margin-bottom: 1.5rem;
 }
@@ -291,6 +295,13 @@ section {
 .grid--rg-07 {
   row-gap: 7rem;
 }
+
+/* Move Queries to the queries.css later */
+
+@media (min-width: 40em) {
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 /*
 - Font sizes (px):
