@@ -192,6 +192,7 @@
 /***************************/
 /* HERO */
 /***************************/
+
 .hero-image {
   margin-inline: auto;
   position: relative;
@@ -203,11 +204,35 @@
 }
 
 .hero-cta > :first-child {
-  margin-right: 1.4rem;
+  margin-right: 2rem;
 }
 
 /* Move Queries to the queries.css later */
 @media (min-width: 40em) {
+  .hero-desc {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    padding-top: 4.8rem;
+  }
+
+  .hero-image {
+    align-self: center;
+  }
+
+  .hero-desc > .desc {
+    text-align: left;
+    max-width: 45ch;
+    margin-inline: 0;
+  }
+
+  .hero-cta {
+    justify-content: flex-start;
+  }
+
+  .hero.pad-block-01 {
+    padding-block: 8rem;
+  }
 }
 
 /***************************/

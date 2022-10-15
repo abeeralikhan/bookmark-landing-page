@@ -257,10 +257,10 @@ section {
   content: "";
   display: block;
   width: 100rem;
+  position: absolute;
   height: 80%;
   background-color: var(--clr-primary-01);
   border-radius: 100vmax;
-  position: absolute;
   z-index: -1;
 }
 
@@ -276,7 +276,7 @@ section {
 }
 
 .container {
-  width: min(120rem, 100% - 7rem);
+  width: min(110rem, 100% - 7rem);
   margin-inline: auto;
 }
 
@@ -300,13 +300,43 @@ section {
 
 @media (min-width: 40em) {
   .grid--2-cols {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 
-/*
+  .desc {
+    font-size: 1.8rem;
+  }
+
+  .primary-heading {
+    font-size: 4.8rem;
+    text-align: left;
+    max-width: 20ch;
+  }
+
+  .btn {
+    padding: 1.65rem 2.5rem;
+  }
+  .grid--cg-01 {
+    column-gap: 4rem;
+  }
+
+  .grid--rg-04 {
+    row-gap: 0;
+  }
+
+  .grid--rg-05 {
+    row-gap: 0;
+  }
+
+  .grid--rg-07 {
+    row-gap: 0;
+  }
+
+  /*
 - Font sizes (px):
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
   
 - Spacing System (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+}
