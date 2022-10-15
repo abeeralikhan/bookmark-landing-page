@@ -109,6 +109,10 @@
     background-color: green;
   } */
 
+  .navbar {
+    height: 15rem;
+  }
+
   .navbar-menu {
     display: none;
   }
@@ -204,7 +208,7 @@
 }
 
 .hero-cta > :first-child {
-  margin-right: 2rem;
+  margin-right: 1.6rem;
 }
 
 /* Move Queries to the queries.css later */
@@ -213,7 +217,7 @@
     grid-row-start: 1;
     grid-column-start: 1;
 
-    padding-top: 4.8rem;
+    align-self: center;
   }
 
   .hero-image {
@@ -228,6 +232,10 @@
 
   .hero-cta {
     justify-content: flex-start;
+  }
+
+  .hero-cta > :first-child {
+    margin-right: 2rem;
   }
 
   .hero.pad-block-01 {
@@ -297,6 +305,66 @@
 
 /* Move Queries to the queries.css later */
 @media (min-width: 40em) {
+  .features {
+    padding-bottom: 8rem;
+  }
+  .features-nav-links {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features-nav-link {
+    padding-block: 2.5rem;
+    padding-right: 7rem;
+    border-top: none;
+    border-bottom: 1px solid var(--border-color);
+    width: inherit;
+    text-align: center;
+  }
+
+  .features-nav-link:first-child {
+    padding-left: 7rem;
+  }
+
+  .features-nav-link > span {
+    font-size: 1.7rem;
+  }
+
+  .tab-active > span::before {
+    top: 4.1rem;
+  }
+
+  .tab-image {
+    align-self: center;
+  }
+
+  .tab-desc {
+    padding-left: 11.5rem;
+    align-self: center;
+  }
+
+  .tab-desc > .desc {
+    text-align: left;
+    max-width: 45ch;
+    margin-inline: 0;
+    margin-bottom: 3rem;
+  }
+
+  .features-desc > .secondary-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .tab-desc > .tertiary-heading {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .features-tabs .btn--primary {
+    display: inline-block;
+    position: static;
+    transform: none;
+  }
 }
 /***************************/
 /* EXTENSION */

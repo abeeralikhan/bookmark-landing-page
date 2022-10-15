@@ -256,7 +256,7 @@ section {
 .illustration-left::before {
   content: "";
   display: block;
-  width: 100rem;
+  width: 120rem;
   position: absolute;
   height: 80%;
   background-color: var(--clr-primary-01);
@@ -305,6 +305,7 @@ section {
 
   .desc {
     font-size: 1.8rem;
+    max-width: 49ch;
   }
 
   .primary-heading {
@@ -313,9 +314,18 @@ section {
     max-width: 20ch;
   }
 
+  .secondary-heading {
+    font-size: 3.5rem;
+  }
+
+  .tertiary-heading {
+    font-size: 3.5rem;
+  }
+
   .btn {
     padding: 1.65rem 2.5rem;
   }
+
   .grid--cg-01 {
     column-gap: 4rem;
   }
